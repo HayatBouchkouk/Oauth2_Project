@@ -5,6 +5,9 @@ import org.springframework.security.core.userdetails.UserDetails;
 
 import java.util.Collection;
 
+
+
+//this class provide the necessary user details for authentication and authorization within the Spring Security framework.
 public class UserInfoConfig implements UserDetails {
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
