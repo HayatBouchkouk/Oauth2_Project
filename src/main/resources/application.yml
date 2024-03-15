@@ -24,3 +24,7 @@ logging:
 server:
     port: 8888
 
+
+rsa:
+    private-key: classpath:certs/pi.pem
+    public-key: classpath:certs/pi.pem

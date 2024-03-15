@@ -1,11 +1,13 @@
 package com.example.Oauth2_project;
 
+import com.example.Oauth2_project.config.RSAKeyRecord;
 import com.example.Oauth2_project.entity.UserInfoEntity;
 import com.example.Oauth2_project.repo.UserInfoRepo;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -13,6 +15,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import java.util.List;
 
 @SpringBootApplication
+@EnableConfigurationProperties(RSAKeyRecord.class)
 public class Oauth2ProjectApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(Oauth2ProjectApplication.class, args);

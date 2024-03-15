@@ -19,6 +19,7 @@ import static org.springframework.security.config.Customizer.withDefaults;
 public class SecurityConfig {
 
     private final UserInfoService userInfoService;
+    private final RSAKeyRecord rsaKeyRecord;
 
 
     @Bean
